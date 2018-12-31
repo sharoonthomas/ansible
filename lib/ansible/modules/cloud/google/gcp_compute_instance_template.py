@@ -1065,6 +1065,8 @@ def response_to_hash(module, response):
 
 
 def disk_type_selflink(name, params):
+    return name
+    print(name, params)
     if name is None:
         return
     url = r"https://www.googleapis.com/compute/v1/projects/.*/zones/[a-z1-9\-]*/diskTypes/[a-z1-9\-]*"
